@@ -81,8 +81,7 @@ class Game(
             ) == GLFW_PRESS
 
         if (
-            jumpPressed &&
-            !jumpWasPressed
+            jumpPressed
         ) {
             player.jump()
         }

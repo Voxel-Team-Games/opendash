@@ -14,9 +14,9 @@ class Player(
     var dead = false
 
     companion object {
-        const val AUTO_SPEED = 300f
+        const val AUTO_SPEED = 350f
         const val GRAVITY = 1800f
-        const val JUMP_FORCE = 750f
+        const val JUMP_FORCE = 800f
     }
 
     fun update(deltaTime: Float) {
