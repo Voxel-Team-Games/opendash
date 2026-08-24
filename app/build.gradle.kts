@@ -55,3 +55,11 @@ java {
 application {
     mainClass.set("com.voxelteamgames.opendash.AppKt")
 }
+
+tasks.jar {
+    manifest {
+        attributes(
+            "Main-Class" to "com.voxelteamgames.opendash.AppKt"
+        )
+    }
+}
