@@ -1,0 +1,37 @@
+{
+    "objects": [
+        {
+            "id": "block.iron",
+            "x": 64.0,
+            "y": 512.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 700.0,
+            "y": 576.0
+        },
+        {
+            "id": "deco.modern.circle",
+            "x": 800.0,
+            "y": 400.0,
+            "scaleX": 2.0,
+            "scaleY": 2.0,
+            "rotation": 25.0
+        },
+        {
+            "id": "block.iron",
+            "x": 448.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 512.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 576.0,
+            "y": 576.0
+        }
+    ]
+}
