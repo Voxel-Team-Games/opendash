@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.jvm)
     alias(libs.plugins.kotlin.serialization)
     application
+    id("com.gradleup.shadow") version "9.2.2"
 }
 
 repositories {
