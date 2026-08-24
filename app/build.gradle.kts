@@ -63,3 +63,15 @@ tasks.jar {
         )
     }
 }
+
+tasks.shadowJar {
+    archiveBaseName.set("OpenDash")
+    archiveClassifier.set("")
+    archiveVersion.set("0.1")
+
+    manifest {
+        attributes(
+            "Main-Class" to "com.voxelteamgames.opendash.AppKt"
+        )
+    }
+}
