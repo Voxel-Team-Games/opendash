@@ -1,4 +1,4 @@
-git pull --rebase
+git pull main --rebase
 git add .
 git commit -m "modificação do davi"
 git push -u origin main
