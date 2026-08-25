@@ -1,0 +1,1909 @@
+{
+    "objects": [
+        {
+            "id": "hazard.yellow_spike",
+            "x": 320.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 704.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 768.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1216.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 1280.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1344.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 2176.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 2240.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2368.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2432.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2496.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2560.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2624.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2688.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2752.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 2944.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3008.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3072.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 2816.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 2880.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3136.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3200.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3200.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3328.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3264.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3264.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3328.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3392.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3392.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3456.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3456.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3456.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3520.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3520.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3584.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3584.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3648.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3648.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3904.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3904.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 3840.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 3776.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 3712.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3968.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 3968.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4032.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4032.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4096.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4096.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4160.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4160.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4160.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4224.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4224.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4224.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4288.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4288.0,
+            "y": 512.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4288.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4480.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4736.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 4992.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5248.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5504.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5760.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5760.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5824.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5888.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5824.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5888.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5760.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5824.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5888.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5952.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5952.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6016.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6016.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5952.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6016.0,
+            "y": 192.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5888.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6080.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6144.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6208.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6272.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6336.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6400.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6464.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6528.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6592.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6656.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6720.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 6784.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 7040.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 7104.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 7168.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7488.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7488.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7552.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7552.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7616.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7680.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7680.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 7616.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 8000.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 8064.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 8128.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1408.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1472.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 1536.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 1536.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 1792.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 1792.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 1792.0,
+            "y": 448.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1600.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1664.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1728.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 1856.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5568.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5504.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5504.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5632.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5696.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 5696.0,
+            "y": 256.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5568.0,
+            "y": 192.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5632.0,
+            "y": 192.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9408.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9472.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9536.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9600.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9664.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9728.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9664.0,
+            "y": 512.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9728.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9856.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9920.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9920.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9792.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9984.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9984.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9984.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9984.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9984.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10048.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10112.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10176.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10176.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10176.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10176.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10112.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10048.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9984.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10176.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10176.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10176.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10048.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10112.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 9856.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10240.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10240.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10304.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10368.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10432.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10240.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10240.0,
+            "y": 512.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 10240.0,
+            "y": 448.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 10304.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10112.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10048.0,
+            "y": 192.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6656.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6592.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6528.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6464.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6336.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6208.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6144.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6080.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6016.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5888.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5824.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5760.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5632.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5568.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5504.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5376.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5120.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5056.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4928.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4864.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4736.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4672.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4608.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4480.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4416.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4352.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4800.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4992.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5184.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5696.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5952.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6272.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 6400.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5312.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5440.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 5248.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 4544.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10752.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10816.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10880.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10944.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10944.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11008.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11072.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11008.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11136.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11072.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11136.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11200.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11200.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11200.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11136.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11328.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11392.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11456.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11520.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11584.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11712.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11648.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11776.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11840.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11904.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": 0.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11264.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11328.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11392.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11456.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11520.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11584.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11648.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11712.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11776.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11840.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11904.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11968.0,
+            "y": -128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11968.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12032.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12096.0,
+            "y": -128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12096.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12160.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12224.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12288.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12352.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12416.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12480.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": 0.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12544.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12480.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12416.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12352.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12288.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12224.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12160.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12096.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 11968.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12032.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 11584.0,
+            "y": 128.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 11776.0,
+            "y": 256.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 11456.0,
+            "y": 384.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 11904.0,
+            "y": 448.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 11968.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 12160.0,
+            "y": 256.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 12096.0,
+            "y": 512.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 12288.0,
+            "y": 128.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 12416.0,
+            "y": 384.0
+        },
+        {
+            "id": "trigger.portal_ship",
+            "x": 11264.0,
+            "y": 256.0
+        },
+        {
+            "id": "trigger.portal_ship",
+            "x": 11264.0,
+            "y": 320.0
+        },
+        {
+            "id": "trigger.portal_ship",
+            "x": 11264.0,
+            "y": 384.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 12544.0,
+            "y": 384.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 12544.0,
+            "y": 320.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 12544.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12608.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12672.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12736.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12800.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12800.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12800.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12608.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12672.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12736.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12800.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12864.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12928.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12992.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13056.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12864.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12928.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 12992.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13056.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13120.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13184.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13248.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13376.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13312.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13440.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13504.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13568.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13632.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13696.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13760.0,
+            "y": 64.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13120.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13184.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13248.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13312.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13376.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13504.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13440.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13568.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13632.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13696.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 13760.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13888.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13952.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13888.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13952.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13824.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14464.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14400.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14336.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14272.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14144.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14208.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14080.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 14016.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13952.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13888.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13120.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13184.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13376.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13440.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13632.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13696.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 13760.0,
+            "y": 384.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9792.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10048.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10880.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10688.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10624.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 10496.0,
+            "y": 256.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 128.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 192.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 256.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 320.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 384.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 448.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 512.0
+        },
+        {
+            "id": "trigger.end",
+            "x": 14400.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 64.0,
+            "y": 640.0
+        },
+        {
+            "id": "block.iron",
+            "x": 128.0,
+            "y": 640.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 64.0,
+            "y": 576.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 128.0,
+            "y": 576.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 128.0,
+            "y": 512.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 64.0,
+            "y": 512.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 64.0,
+            "y": 448.0
+        },
+        {
+            "id": "trigger.portal_cube",
+            "x": 128.0,
+            "y": 448.0
+        }
+    ]
+}
