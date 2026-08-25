@@ -1,4 +1,4 @@
-git remote add origin https://github.com/Voxel-Team-Games/opendash.git
+git pull --merge
 git add .
 git commit -m "modificação do davi"
 git push -u origin main
