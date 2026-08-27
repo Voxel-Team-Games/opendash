@@ -218,8 +218,7 @@ class Game(
          * espaço não pode ativá-lo várias vezes.
          */
         val jumpJustPressed =
-            jumpPressed &&
-            !jumpWasPressed
+            jumpPressed
 
         // =================================================
         // CUBE INPUT
@@ -262,7 +261,7 @@ class Game(
                  */
                 yellowOrbJumpUsed = true
 
-                player.jump()
+                player.forceJump()
             }
         }
 
