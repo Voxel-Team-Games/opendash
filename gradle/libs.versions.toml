@@ -1,0 +1,17 @@
+[versions]
+guava = "32.1.2-jre"
+junit-jupiter-engine = "5.10.0"
+kotlin = "1.9.20"
+serialization = "1.6.3"
+android-gradle-plugin = "8.7.3"
+
+[libraries]
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+[plugins]
+jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
