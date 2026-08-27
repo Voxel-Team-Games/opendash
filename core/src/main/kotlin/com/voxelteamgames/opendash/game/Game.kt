@@ -249,7 +249,8 @@ class Game(
                 jumpJustPressed &&
                 !player.grounded &&
                 touchingYellowOrb &&
-                !yellowOrbJumpUsed
+                !yellowOrbJumpUsed &&
+            !jumpWasPressed
             ) {
 
                 /*
