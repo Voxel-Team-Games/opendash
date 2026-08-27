@@ -123,6 +123,10 @@ class OpenDashGame : ApplicationAdapter() {
         loadTexture(
             "/textures/sky/raster_1.png"
         )
+        
+        loadTexture(
+            "/textures/deco/yellow_orb.png"
+        )
 
         loadTexture(
             "/textures/ground/raster_1.png"
