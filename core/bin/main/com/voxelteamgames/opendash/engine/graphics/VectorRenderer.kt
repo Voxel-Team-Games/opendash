@@ -15,31 +15,31 @@ class VectorRenderer {
     private var screenHeight = 0
 
     fun begin(
-        width: Int,
-        height: Int,
-        camera: Camera? = null
-    ) {
+    width: Int,
+    height: Int,
+    camera: Camera? = null
+) {
 
-        screenWidth = width
-        screenHeight = height
+    screenWidth = width
+    screenHeight = height
 
-        this.camera = camera
+    this.camera = camera
 
-        val projection =
-            Matrix4().setToOrtho2D(
-                0f,
-                height.toFloat(),
-                width.toFloat(),
-                -height.toFloat()
-            )
-
-        shapeRenderer.projectionMatrix =
-            projection
-
-        shapeRenderer.begin(
-            ShapeRenderer.ShapeType.Filled
+    val projection =
+        Matrix4().setToOrtho2D(
+            0f,
+            0f,
+            width.toFloat(),
+            height.toFloat()
         )
-    }
+
+    shapeRenderer.projectionMatrix =
+        projection
+
+    shapeRenderer.begin(
+        ShapeRenderer.ShapeType.Filled
+    )
+}
 
     fun draw(
         shape: VectorShape,

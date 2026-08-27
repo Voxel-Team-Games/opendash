@@ -126,13 +126,12 @@ class LevelEditor(
          * do renderer antigo, então convertemos Y usando
          * a altura da tela.
          */
+val mouseX =
+    Gdx.input.x.toFloat()
 
-        val mouseX =
-            Gdx.input.x.toFloat()
-
-        val mouseY =
-            Gdx.graphics.height -
-            Gdx.input.y.toFloat()
+val mouseY =
+    Gdx.graphics.height -
+    Gdx.input.y.toFloat()
 
         // =================================================
         // SCREEN -> WORLD
@@ -631,53 +630,5 @@ class LevelEditor(
 
             y += GRID_SIZE
         }
-    }
-
-    // =================================================
-    // CURSOR
-    // =================================================
-
-    fun renderCursor(
-        vectorRenderer: VectorRenderer
-    ) {
-
-        vectorRenderer.drawRect(
-            x = cursorX,
-            y = cursorY,
-            width = GRID_SIZE,
-            height = GRID_SIZE,
-            colorR = 1f,
-            colorG = 1f,
-            colorB = 1f,
-            colorA = 0.15f
-        )
-    }
-
-    // =================================================
-    // SELEÇÃO
-    // =================================================
-
-    fun renderSelection(
-        vectorRenderer: VectorRenderer
-    ) {
-
-        val selected =
-            selectedObject
-                ?: return
-
-        vectorRenderer.drawRect(
-            x = selected.x,
-            y = selected.y,
-            width =
-                GRID_SIZE *
-                selected.scaleX,
-            height =
-                GRID_SIZE *
-                selected.scaleY,
-            colorR = 0.6f,
-            colorG = 0.8f,
-            colorB = 1f,
-            colorA = 0.25f
-        )
     }
 }

@@ -835,14 +835,6 @@ class OpenDashGame : ApplicationAdapter() {
                 vectorRenderer,
                 camera
             )
-
-            editor.renderCursor(
-                vectorRenderer
-            )
-
-            editor.renderSelection(
-                vectorRenderer
-            )
         }
 
         // =================================================
