@@ -85,6 +85,11 @@ class LevelEditor(
         ) {
             selectedObjectId = "trigger.end"
         }
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUM_6)
+        ) {
+            selectedObjectId = "trigger.yellow_orb"
+        }
 
         // =================================================
         // MOVIMENTO DA CÂMERA
