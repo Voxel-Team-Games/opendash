@@ -98,5 +98,13 @@ ObjectRegistry.register(
         collision = true
     )
 )
+ObjectRegistry.register(
+    ObjectDefinition(
+        id = "trigger.yellow_orb",
+        type = ObjectType.TOUCH_TRIGGER,
+        texture = "/textures/deco/yellow_orb.png",
+        collision = true
+    )
+)
     }
 }

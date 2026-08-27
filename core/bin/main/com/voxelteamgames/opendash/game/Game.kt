@@ -15,8 +15,10 @@ class Game(
 ) {
 
     var number = 1
+
     var nextLevelRequested = false
-    private set
+        private set
+
     var justRespawned = false
         private set
 
@@ -29,7 +31,34 @@ class Game(
     val musicManager =
         MusicManager()
 
+    // =================================================
+    // INPUT
+    // =================================================
+
     private var jumpWasPressed = false
+
+    // =================================================
+    // YELLOW ORB
+    // =================================================
+
+    /*
+     * Indica se o jogador está atualmente encostando
+     * em um Yellow Orb.
+     */
+    private var touchingYellowOrb = false
+
+    /*
+     * Cada contato com um orb fornece apenas um pulo
+     * extra.
+     *
+     * Quando o jogador sai do orb, essa permissão é
+     * removida. Ao tocar novamente, recebe outra.
+     */
+    private var yellowOrbJumpUsed = false
+
+    // =================================================
+    // MORTE
+    // =================================================
 
     private var deathTimer = 0f
 
@@ -137,19 +166,60 @@ class Game(
                 )
 
                 deathTimer = 0f
+
                 justRespawned = true
+
+                touchingYellowOrb = false
+                yellowOrbJumpUsed = false
+                jumpWasPressed = false
             }
 
             return
         }
 
         // =================================================
+        // DETECTAR YELLOW ORB
+        // =================================================
+
+        touchingYellowOrb =
+            isTouchingYellowOrb()
+
+        /*
+         * Se saiu do orb, o pulo daquele contato deixa
+         * de estar disponível.
+         *
+         * Quando entrar novamente em outro orb, ele será
+         * liberado novamente.
+         */
+        if (
+            !touchingYellowOrb
+        ) {
+
+            yellowOrbJumpUsed = false
+        }
+
+        // =================================================
         // INPUT
         // =================================================
 
-val jumpPressed =
-    Gdx.input.isKeyPressed(Input.Keys.SPACE) ||
-    Gdx.input.isButtonPressed(Input.Buttons.LEFT)
+        val jumpPressed =
+            Gdx.input.isKeyPressed(
+                Input.Keys.SPACE
+            ) ||
+            Gdx.input.isButtonPressed(
+                Input.Buttons.LEFT
+            )
+
+        /*
+         * Detecta somente o momento em que o botão foi
+         * pressionado.
+         *
+         * Isso é importante para o Yellow Orb: segurar
+         * espaço não pode ativá-lo várias vezes.
+         */
+        val jumpJustPressed =
+            jumpPressed &&
+            !jumpWasPressed
 
         // =================================================
         // CUBE INPUT
@@ -160,13 +230,44 @@ val jumpPressed =
             PlayerGamemode.CUBE
         ) {
 
+            // ---------------------------------------------
+            // PULO NORMAL
+            // ---------------------------------------------
+
             if (
-                jumpPressed
+                jumpJustPressed &&
+                player.grounded
             ) {
 
                 player.jump()
             }
+
+            // ---------------------------------------------
+            // PULO DO YELLOW ORB
+            // ---------------------------------------------
+
+            else if (
+                jumpJustPressed &&
+                !player.grounded &&
+                touchingYellowOrb &&
+                !yellowOrbJumpUsed
+            ) {
+
+                /*
+                 * O orb permite o segundo pulo.
+                 *
+                 * Primeiro marcamos como usado para
+                 * impedir múltiplas ativações enquanto
+                 * o jogador continua dentro dele.
+                 */
+                yellowOrbJumpUsed = true
+
+                player.jump()
+            }
         }
+
+        jumpWasPressed =
+            jumpPressed
 
         // =================================================
         // POSIÇÃO ANTERIOR
@@ -279,6 +380,20 @@ val jumpPressed =
                     ) {
 
                         // -----------------------------------------
+                        // YELLOW ORB
+                        // -----------------------------------------
+
+                        "trigger.yellow_orb" -> {
+
+                            /*
+                             * O estado de contato já é detectado
+                             * no início do próximo frame, mas
+                             * mantemos a identificação aqui também.
+                             */
+                            touchingYellowOrb = true
+                        }
+
+                        // -----------------------------------------
                         // PORTAL → CUBE
                         // -----------------------------------------
 
@@ -304,9 +419,9 @@ val jumpPressed =
 
                         "trigger.end" -> {
 
-nextLevelRequested = true
+                            nextLevelRequested = true
 
-return
+                            return
                         }
                     }
                 }
@@ -480,32 +595,107 @@ return
     }
 
     // =================================================
+    // YELLOW ORB COLLISION
+    // =================================================
+
+    private fun isTouchingYellowOrb(): Boolean {
+
+        val currentLeft =
+            player.x
+
+        val currentRight =
+            player.x +
+            player.width
+
+        val currentTop =
+            player.y
+
+        val currentBottom =
+            player.y +
+            player.height
+
+        for (
+            levelObject in
+            level.objects
+        ) {
+
+            if (
+                levelObject.id !=
+                "trigger.yellow_orb"
+            ) {
+                continue
+            }
+
+            val objectLeft =
+                levelObject.x
+
+            val objectRight =
+                levelObject.x +
+                64f *
+                levelObject.scaleX
+
+            val objectTop =
+                levelObject.y
+
+            val objectBottom =
+                levelObject.y +
+                64f *
+                levelObject.scaleY
+
+            val horizontalCollision =
+                currentRight > objectLeft &&
+                currentLeft < objectRight
+
+            val verticalCollision =
+                currentBottom > objectTop &&
+                currentTop < objectBottom
+
+            if (
+                horizontalCollision &&
+                verticalCollision
+            ) {
+
+                return true
+            }
+        }
+
+        return false
+    }
+
+    // =================================================
     // MORTE
     // =================================================
 
     private fun killPlayer() {
 
         player.kill()
+
         deathTimer = 0f
+
+        touchingYellowOrb = false
+        yellowOrbJumpUsed = false
     }
 
     // =================================================
     // RESTART
     // =================================================
 
-fun restart() {
+    fun restart() {
 
-    player.reset(
-        SPAWN_X,
-        SPAWN_Y
-    )
+        player.reset(
+            SPAWN_X,
+            SPAWN_Y
+        )
 
-    deathTimer = 0f
+        deathTimer = 0f
 
-    jumpWasPressed = false
+        jumpWasPressed = false
 
-    nextLevelRequested = false
-}
+        nextLevelRequested = false
+
+        touchingYellowOrb = false
+        yellowOrbJumpUsed = false
+    }
 
     // =================================================
     // RENDER
@@ -780,7 +970,8 @@ fun restart() {
             player.height
         )
     }
+
     fun clearNextLevelRequest() {
-    nextLevelRequested = false
-}
+        nextLevelRequested = false
+    }
 }
