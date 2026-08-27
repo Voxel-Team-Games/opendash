@@ -53,8 +53,13 @@ class Player(
             return
         }
 
-        // Movimento horizontal automático
-        x += AUTO_SPEED * deltaTime
+        // =================================================
+        // MOVIMENTO HORIZONTAL
+        // =================================================
+
+        x +=
+            AUTO_SPEED *
+            deltaTime
 
         when (gamemode) {
 
@@ -119,7 +124,7 @@ class Player(
     }
 
     // =================================================
-    // CUBE - PULO
+    // CUBE - PULO NORMAL
     // =================================================
 
     fun jump() {
@@ -138,6 +143,44 @@ class Player(
         if (!grounded) {
             return
         }
+
+        performJump()
+    }
+
+    // =================================================
+    // CUBE - PULO FORÇADO
+    // =================================================
+
+    /*
+     * Usado por objetos como o Yellow Orb.
+     *
+     * Diferentemente de jump(), este método não exige
+     * que o jogador esteja no chão.
+     *
+     * A decisão de quando ele pode ser usado pertence
+     * ao Game.
+     */
+    fun forceJump() {
+
+        if (dead) {
+            return
+        }
+
+        if (
+            gamemode !=
+            PlayerGamemode.CUBE
+        ) {
+            return
+        }
+
+        performJump()
+    }
+
+    // =================================================
+    // EXECUTAR PULO
+    // =================================================
+
+    private fun performJump() {
 
         velocityY =
             -CUBE_JUMP_FORCE
@@ -192,7 +235,7 @@ class Player(
         velocityY = 0f
 
         grounded = false
-               
+
         dead = false
     }
 }
