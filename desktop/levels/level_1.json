@@ -1,5 +1,109 @@
 {
-    "music": "music/glorious_morning.mp3",
     "objects": [
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9408.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9344.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9280.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9216.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9152.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9088.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 9024.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 8960.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 8896.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 8832.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17216.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17280.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17344.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17472.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17408.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17600.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17664.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17536.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17728.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17792.0,
+            "y": 576.0
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 17856.0,
+            "y": 576.0
+        }
     ]
 }

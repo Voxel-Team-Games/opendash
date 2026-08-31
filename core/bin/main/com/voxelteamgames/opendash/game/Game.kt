@@ -298,7 +298,8 @@ if (
 
         player.update(
             deltaTime,
-            jumpPressed
+            jumpPressed,
+            level.speed
         )
 
         val currentLeft =

@@ -49,21 +49,24 @@ object LevelParser {
 
                 }.toMutableList()
 
-            return Level(
-                objects = objects,
-                music = data.music
-            )
+return Level(
+    objects = objects,
+    music = data.music,
+    speed = data.speed
+)
         }
     }
 
-    @Serializable
-    private data class LevelData(
+@Serializable
+private data class LevelData(
 
-        val music: String? = null,
+    val music: String? = null,
 
-        val objects: List<LevelObjectData> = emptyList()
+    val speed: Float = 350f,
 
-    )
+    val objects: List<LevelObjectData> = emptyList()
+
+)
 
     @Serializable
     private data class LevelObjectData(
@@ -108,9 +111,10 @@ object LevelParser {
 
             }.toMutableList()
 
-        return Level(
-            objects = objects,
-            music = data.music
-        )
+return Level(
+    objects = objects,
+    music = data.music,
+    speed = data.speed
+)
     }
 }

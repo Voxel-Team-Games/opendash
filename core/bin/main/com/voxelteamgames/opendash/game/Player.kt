@@ -48,8 +48,9 @@ var moveDirection = 1f
 
 fun update(
     deltaTime: Float,
-    inputPressed: Boolean
-) {
+    inputPressed: Boolean,
+    horizontalSpeed: Float = AUTO_SPEED
+){
 
     if (dead) {
         return
@@ -66,10 +67,10 @@ fun update(
     // MOVIMENTO HORIZONTAL
     // =================================================
 
-    x +=
-        AUTO_SPEED *
-        moveDirection *
-        scaledDeltaTime
+x +=
+    horizontalSpeed *
+    moveDirection *
+    scaledDeltaTime
 
     when (gamemode) {
 
