@@ -18,7 +18,8 @@ class Game(
 
     var nextLevelRequested = false
         private set
-
+private var reverseTriggerUsed = false
+private var invertTriggerUsed = false
     var justRespawned = false
         private set
 
@@ -30,7 +31,9 @@ class Game(
 
     val musicManager =
         MusicManager()
-
+init {
+    musicManager.play(level.music)
+}
     // =================================================
     // INPUT
     // =================================================
@@ -141,7 +144,14 @@ class Game(
         deltaTime: Float,
         window: Long
     ) {
+        val touchingInvertTrigger =
+    isTouchingInvertTrigger()
 
+if (
+    !touchingInvertTrigger
+) {
+    invertTriggerUsed = false
+}
         // =================================================
         // MORTE / RESPAWN
         // =================================================
@@ -151,7 +161,7 @@ class Game(
         if (
             player.dead
         ) {
-
+            musicManager.stop()
             deathTimer +=
                 deltaTime
 
@@ -172,11 +182,16 @@ class Game(
                 touchingYellowOrb = false
                 yellowOrbJumpUsed = false
                 jumpWasPressed = false
+
+                musicManager.play(level.music)
+                musicManager.restart()
             }
 
             return
         }
-
+        if (!isTouchingReverseTrigger()) {
+    reverseTriggerUsed = false
+}
         // =================================================
         // DETECTAR YELLOW ORB
         // =================================================
@@ -413,6 +428,31 @@ class Game(
                                 PlayerGamemode.SHIP
                         }
 
+// -----------------------------------------
+// REVERSE TRIGGER
+// -----------------------------------------
+
+"trigger.reverse" -> {
+
+    if (!reverseTriggerUsed) {
+
+        player.reverseDirection()
+
+        reverseTriggerUsed = true
+    }
+}
+
+"trigger.invert" -> {
+
+    if (!invertTriggerUsed) {
+
+        player.gravityInverted =
+            !player.gravityInverted
+
+        invertTriggerUsed = true
+    }
+}
+
                         // -----------------------------------------
                         // TRIGGER END
                         // -----------------------------------------
@@ -471,112 +511,180 @@ class Game(
                 }
             }
 
-            // =================================================
-            // BLOCK
-            // =================================================
+// =================================================
+// BLOCK
+// =================================================
 
-            if (
-                definition.type ==
-                ObjectType.BLOCK
-            ) {
+if (
+    definition.type ==
+    ObjectType.BLOCK
+) {
 
-                val horizontalCollision =
-                    currentRight >
-                    objectLeft &&
-                    currentLeft <
-                    objectRight
+    val horizontalCollision =
+        currentRight >
+        objectLeft &&
+        currentLeft <
+        objectRight
 
-                val verticalCollision =
-                    currentBottom >
-                    objectTop &&
-                    currentTop <
-                    objectBottom
+    val verticalCollision =
+        currentBottom >
+        objectTop &&
+        currentTop <
+        objectBottom
 
-                if (
-                    !horizontalCollision ||
-                    !verticalCollision
-                ) {
-                    continue
-                }
+    if (
+        !horizontalCollision ||
+        !verticalCollision
+    ) {
+        continue
+    }
 
-                // =================================================
-                // TOLERÂNCIA DO TOPO
-                // =================================================
+    // =================================================
+    // GRAVIDADE NORMAL
+    // =================================================
 
-                val topDistance =
-                    currentBottom -
-                    objectTop
+    if (!player.gravityInverted) {
 
-                val landedOnTop =
-                    previousBottom <=
-                    objectTop &&
-                    currentBottom >=
-                    objectTop &&
-                    player.velocityY >= 0f
+        val topDistance =
+            currentBottom -
+            objectTop
 
-                val nearTop =
-                    topDistance >=
-                    -TOP_TOLERANCE &&
-                    topDistance <=
-                    TOP_TOLERANCE
+        val landedOnTop =
+            previousBottom <=
+            objectTop &&
+            currentBottom >=
+            objectTop &&
+            player.velocityY >= 0f
 
-                // =================================================
-                // POUSO NORMAL
-                // =================================================
+        val nearTop =
+            topDistance >=
+            -TOP_TOLERANCE &&
+            topDistance <=
+            TOP_TOLERANCE
 
-                if (
-                    player.velocityY >= 0f &&
-                    (
-                        landedOnTop ||
-                        nearTop
-                    )
-                ) {
+        if (
+            player.velocityY >= 0f &&
+            (
+                landedOnTop ||
+                nearTop
+            )
+        ) {
 
-                    player.landOn(
-                        objectTop
-                    )
+            player.landOn(
+                objectTop
+            )
 
-                    continue
-                }
+            continue
+        }
 
-                // =================================================
-                // COLISÃO LETAL
-                // =================================================
+        // ---------------------------------------------
+        // COLISÃO LETAL
+        // ---------------------------------------------
 
-                val deeplyInsideBlock =
-                    topDistance >
-                    WALL_LETHALITY_MARGIN
+        val deeplyInsideBlock =
+            topDistance >
+            WALL_LETHALITY_MARGIN
 
-                if (
-                    deeplyInsideBlock
-                ) {
+        if (
+            deeplyInsideBlock
+        ) {
 
-                    killPlayer()
+            killPlayer()
 
-                    return
-                }
+            return
+        }
 
-                // =================================================
-                // MARGEM TOLERÁVEL
-                // =================================================
+        if (
+            player.velocityY >= 0f &&
+            topDistance <=
+            WALL_LETHALITY_MARGIN
+        ) {
 
-                if (
-                    player.velocityY >= 0f &&
-                    topDistance <=
-                    WALL_LETHALITY_MARGIN
-                ) {
+            player.landOn(
+                objectTop
+            )
 
-                    player.landOn(
-                        objectTop
-                    )
+            continue
+        }
 
-                    continue
-                }
+        killPlayer()
 
-                killPlayer()
+        return
+    }
 
-                return
-            }
+    // =================================================
+    // GRAVIDADE INVERTIDA
+    // =================================================
+
+    else {
+
+        val bottomDistance =
+            objectBottom -
+            currentTop
+
+        val landedOnBottom =
+            previousBottom >=
+            objectBottom &&
+            currentTop <=
+            objectBottom &&
+            player.velocityY <= 0f
+
+        val nearBottom =
+            bottomDistance >=
+            -TOP_TOLERANCE &&
+            bottomDistance <=
+            TOP_TOLERANCE
+
+        if (
+            player.velocityY <= 0f &&
+            (
+                landedOnBottom ||
+                nearBottom
+            )
+        ) {
+
+            player.landOn(
+                objectBottom
+            )
+
+            continue
+        }
+
+        // ---------------------------------------------
+        // COLISÃO LETAL
+        // ---------------------------------------------
+
+        val deeplyInsideBlock =
+            bottomDistance >
+            WALL_LETHALITY_MARGIN
+
+        if (
+            deeplyInsideBlock
+        ) {
+
+            killPlayer()
+
+            return
+        }
+
+        if (
+            player.velocityY <= 0f &&
+            bottomDistance <=
+            WALL_LETHALITY_MARGIN
+        ) {
+
+            player.landOn(
+                objectBottom
+            )
+
+            continue
+        }
+
+        killPlayer()
+
+        return
+    }
+}
         }
 
         // =================================================
@@ -695,6 +803,9 @@ class Game(
 
         touchingYellowOrb = false
         yellowOrbJumpUsed = false
+        musicManager.restart()
+        musicManager.stop()
+        musicManager.play(level.music)
     }
 
     // =================================================
@@ -974,4 +1085,137 @@ class Game(
     fun clearNextLevelRequest() {
         nextLevelRequested = false
     }
+private fun updateMusic() {
+    musicManager.play(level.music)
+}
+
+init {
+    updateMusic()
+}
+
+private fun isTouchingReverseTrigger(): Boolean {
+
+    val currentLeft =
+        player.x
+
+    val currentRight =
+        player.x +
+        player.width
+
+    val currentTop =
+        player.y
+
+    val currentBottom =
+        player.y +
+        player.height
+
+    for (
+        levelObject in
+        level.objects
+    ) {
+
+        if (
+            levelObject.id !=
+            "trigger.reverse"
+        ) {
+            continue
+        }
+
+        val objectLeft =
+            levelObject.x
+
+        val objectRight =
+            levelObject.x +
+            64f *
+            levelObject.scaleX
+
+        val objectTop =
+            levelObject.y
+
+        val objectBottom =
+            levelObject.y +
+            64f *
+            levelObject.scaleY
+
+        val horizontalCollision =
+            currentRight > objectLeft &&
+            currentLeft < objectRight
+
+        val verticalCollision =
+            currentBottom > objectTop &&
+            currentTop < objectBottom
+
+        if (
+            horizontalCollision &&
+            verticalCollision
+        ) {
+            return true
+        }
+    }
+
+    return false
+}
+
+private fun isTouchingInvertTrigger(): Boolean {
+
+    val currentLeft =
+        player.x
+
+    val currentRight =
+        player.x +
+        player.width
+
+    val currentTop =
+        player.y
+
+    val currentBottom =
+        player.y +
+        player.height
+
+    for (
+        levelObject in
+        level.objects
+    ) {
+
+        if (
+            levelObject.id !=
+            "trigger.invert"
+        ) {
+            continue
+        }
+
+        val objectLeft =
+            levelObject.x
+
+        val objectRight =
+            levelObject.x +
+            64f *
+            levelObject.scaleX
+
+        val objectTop =
+            levelObject.y
+
+        val objectBottom =
+            levelObject.y +
+            64f *
+            levelObject.scaleY
+
+        val horizontalCollision =
+            currentRight > objectLeft &&
+            currentLeft < objectRight
+
+        val verticalCollision =
+            currentBottom > objectTop &&
+            currentTop < objectBottom
+
+        if (
+            horizontalCollision &&
+            verticalCollision
+        ) {
+            return true
+        }
+    }
+
+    return false
+}
 }

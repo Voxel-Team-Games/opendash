@@ -90,6 +90,16 @@ class LevelEditor(
         ) {
             selectedObjectId = "trigger.yellow_orb"
         }
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUM_7)
+        ) {
+            selectedObjectId = "trigger.reverse"
+        }
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUM_8)
+        ) {
+            selectedObjectId = "trigger.invert"
+        }
 
         // =================================================
         // MOVIMENTO DA CÂMERA

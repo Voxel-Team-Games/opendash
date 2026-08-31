@@ -48,7 +48,7 @@ class OpenDashGame : ApplicationAdapter() {
 
     private lateinit var renderer: SpriteRenderer
     private lateinit var vectorRenderer: VectorRenderer
-
+    private var reverseTriggerUsed = false
     private lateinit var camera: Camera
 
     // =================================================
@@ -155,6 +155,15 @@ class OpenDashGame : ApplicationAdapter() {
         loadTexture(
             "/textures/players/cube/0.png"
         )
+
+        loadTexture(
+            "/textures/trigger/invert_trigger.png"
+        )
+
+        loadTexture(
+            "/textures/trigger/reverse_trigger.png"
+        )
+
 
         // =================================================
         // VETORES
@@ -308,15 +317,18 @@ class OpenDashGame : ApplicationAdapter() {
                 return
             }
 
-        level.objects.clear()
+level.objects.clear()
 
-        level.objects.addAll(
-            loadedLevel.objects
-        )
+level.objects.addAll(
+    loadedLevel.objects
+)
 
-        currentLevelNumber =
-            levelNumber
+level.music =
+    loadedLevel.music
 
+currentLevelNumber =
+    levelNumber
+    
         currentLevelName =
             newLevelName
 
@@ -339,7 +351,6 @@ class OpenDashGame : ApplicationAdapter() {
     private fun update(
         deltaTime: Float
     ) {
-
         // =================================================
         // MODIFICADORES
         // =================================================

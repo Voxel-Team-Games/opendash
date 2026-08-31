@@ -106,5 +106,24 @@ ObjectRegistry.register(
         collision = true
     )
 )
+ObjectRegistry.register(
+    ObjectDefinition(
+        id = "trigger.invert",
+        type = ObjectType.TOUCH_TRIGGER,
+        texture = "/textures/trigger/invert_trigger.png",
+        collision = true,
+        trigger = TouchTriggerType.GRAVITY_INVERT
+    )
+)
+
+ObjectRegistry.register(
+    ObjectDefinition(
+        id = "trigger.reverse",
+        type = ObjectType.TOUCH_TRIGGER,
+        texture = "/textures/trigger/reverse_trigger.png",
+        collision = true,
+        trigger = TouchTriggerType.DIRECTION_REVERSE
+    )
+)
     }
 }

@@ -12,9 +12,11 @@ class Player(
     var grounded = false
 
     var dead = false
-
+var gravityInverted = false
     var gamemode =
         PlayerGamemode.CUBE
+
+var moveDirection = 1f
 
     companion object {
 
@@ -35,7 +37,7 @@ class Player(
         // SHIP
         // =================================================
 
-        const val SHIP_GRAVITY = 900f
+        const val SHIP_GRAVITY = 800f
         const val SHIP_THRUST = 1800f
         const val SHIP_MAX_SPEED_Y = 900f
     }
@@ -44,84 +46,96 @@ class Player(
     // UPDATE
     // =================================================
 
-    fun update(
-        deltaTime: Float,
-        inputPressed: Boolean
-    ) {
+fun update(
+    deltaTime: Float,
+    inputPressed: Boolean
+) {
 
-        if (dead) {
-            return
+    if (dead) {
+        return
+    }
+
+    // =================================================
+    // VELOCIDADE GLOBAL DO JOGO
+    // =================================================
+
+    val scaledDeltaTime =
+        deltaTime * 1.3333f
+
+    // =================================================
+    // MOVIMENTO HORIZONTAL
+    // =================================================
+
+    x +=
+        AUTO_SPEED *
+        moveDirection *
+        scaledDeltaTime
+
+    when (gamemode) {
+
+        // =================================================
+        // CUBE
+        // =================================================
+
+        PlayerGamemode.CUBE -> {
+
+            val gravity =
+                if (gravityInverted) {
+                    -CUBE_GRAVITY
+                } else {
+                    CUBE_GRAVITY
+                }
+
+            velocityY +=
+                gravity *
+                scaledDeltaTime
+
+            y +=
+                velocityY *
+                scaledDeltaTime
         }
 
         // =================================================
-        // MOVIMENTO HORIZONTAL
+        // SHIP
         // =================================================
 
-        x +=
-            AUTO_SPEED *
-            deltaTime
+        PlayerGamemode.SHIP -> {
 
-        when (gamemode) {
+            velocityY +=
+                SHIP_GRAVITY *
+                scaledDeltaTime
 
-            // =================================================
-            // CUBE
-            // =================================================
+            if (inputPressed) {
 
-            PlayerGamemode.CUBE -> {
-
-                velocityY +=
-                    CUBE_GRAVITY *
-                    deltaTime
-
-                y +=
-                    velocityY *
-                    deltaTime
+                velocityY -=
+                    SHIP_THRUST *
+                    scaledDeltaTime
             }
 
-            // =================================================
-            // SHIP
-            // =================================================
+            if (
+                velocityY >
+                SHIP_MAX_SPEED_Y
+            ) {
 
-            PlayerGamemode.SHIP -> {
-
-                // Gravidade
-                velocityY +=
-                    SHIP_GRAVITY *
-                    deltaTime
-
-                // Propulsão
-                if (inputPressed) {
-
-                    velocityY -=
-                        SHIP_THRUST *
-                        deltaTime
-                }
-
-                // Limitar velocidade
-                if (
-                    velocityY >
+                velocityY =
                     SHIP_MAX_SPEED_Y
-                ) {
-
-                    velocityY =
-                        SHIP_MAX_SPEED_Y
-                }
-
-                if (
-                    velocityY <
-                    -SHIP_MAX_SPEED_Y
-                ) {
-
-                    velocityY =
-                        -SHIP_MAX_SPEED_Y
-                }
-
-                y +=
-                    velocityY *
-                    deltaTime
             }
+
+            if (
+                velocityY <
+                -SHIP_MAX_SPEED_Y
+            ) {
+
+                velocityY =
+                    -SHIP_MAX_SPEED_Y
+            }
+
+            y +=
+                velocityY *
+                scaledDeltaTime
         }
     }
+}
 
     // =================================================
     // CUBE - PULO NORMAL
@@ -180,30 +194,44 @@ class Player(
     // EXECUTAR PULO
     // =================================================
 
-    private fun performJump() {
+private fun performJump() {
 
-        velocityY =
+    velocityY =
+        if (gravityInverted) {
+            CUBE_JUMP_FORCE
+        } else {
             -CUBE_JUMP_FORCE
+        }
 
-        grounded = false
-    }
+    grounded = false
+}
 
-    // =================================================
-    // CUBE - POUSO
-    // =================================================
+// =================================================
+// CUBE - POUSO
+// =================================================
 
-    fun landOn(
-        platformY: Float
-    ) {
+fun landOn(
+    surfaceY: Float
+) {
 
+    if (gravityInverted) {
+
+        // Player fica abaixo da superfície
         y =
-            platformY -
+            surfaceY
+
+    } else {
+
+        // Player fica acima da superfície
+        y =
+            surfaceY -
             height
-
-        velocityY = 0f
-
-        grounded = true
     }
+
+    velocityY = 0f
+
+    grounded = true
+}
 
     // =================================================
     // MORTE
@@ -220,6 +248,7 @@ class Player(
         velocityY = 0f
     }
 
+
     // =================================================
     // RESET
     // =================================================
@@ -233,9 +262,14 @@ class Player(
         y = startY
 
         velocityY = 0f
-
+        moveDirection = 1f
+        gravityInverted = false
         grounded = false
 
         dead = false
     }
+    fun reverseDirection() {
+
+    moveDirection *= -1f
+}
 }
