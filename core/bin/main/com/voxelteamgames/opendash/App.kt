@@ -16,7 +16,6 @@ import com.voxelteamgames.opendash.game.DefaultObjects
 import com.voxelteamgames.opendash.game.Game
 import com.voxelteamgames.opendash.game.LevelEditor
 import com.voxelteamgames.opendash.game.LevelStorage
-
 import kotlin.math.floor
 
 enum class AppMode {
@@ -29,6 +28,12 @@ class OpenDashGame : ApplicationAdapter() {
     // =================================================
     // TEXTURAS
     // =================================================
+
+private var autoSaveTimer = 0f
+
+private var levelDirty = false
+
+private val AUTO_SAVE_INTERVAL = 10f
 
     private val textures =
         mutableMapOf<String, Texture>()
@@ -162,6 +167,12 @@ class OpenDashGame : ApplicationAdapter() {
 
         loadTexture(
             "/textures/trigger/reverse_trigger.png"
+        )
+        loadTexture(
+            "/textures/deco/jump_marker.png"
+        )
+        loadTexture(
+            "/textures/deco/jump_marker_2.png"
         )
 
 
@@ -432,7 +443,7 @@ currentLevelNumber =
             !shiftPressed
 
         // =================================================
-        // SALVAR
+        // SALVAR COMO
         // =================================================
 
         if (
@@ -447,12 +458,31 @@ currentLevelNumber =
             )
 
             println(
-                "Fase salva: $currentLevelName"
+                "Fase salva como: $currentLevelName"
             )
         }
 
-        saveWasPressed =
-            savePressed
+        saveAsWasPressed =
+            saveAsPressed
+
+if (mode == AppMode.EDITOR) {
+
+    autoSaveTimer += deltaTime
+
+    if (autoSaveTimer >= AUTO_SAVE_INTERVAL) {
+
+        LevelStorage.save(
+            level,
+            currentLevelName
+        )
+
+        autoSaveTimer = 0f
+
+        println(
+            "Autosave: $currentLevelName"
+        )
+    }
+}
 
         // =================================================
         // SALVAR COMO

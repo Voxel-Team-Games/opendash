@@ -100,6 +100,16 @@ class LevelEditor(
         ) {
             selectedObjectId = "trigger.invert"
         }
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUM_9)
+        ) {
+            selectedObjectId = "deco.jump_marker"
+        }
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUM_0)
+        ) {
+            selectedObjectId = "deco.jump_marker_2"
+        }
 
         // =================================================
         // MOVIMENTO DA CÂMERA
@@ -127,6 +137,30 @@ class LevelEditor(
             Gdx.input.isKeyPressed(Input.Keys.S)
         ) {
             camera.y += cameraSpeed
+        }
+
+                if (
+            Gdx.input.isKeyPressed(Input.Keys.A) && Gdx.input.isKeyPressed(Input.Keys.CONTROL_LEFT)
+        ) {
+            camera.x -= cameraSpeed * 2f
+        }
+
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.D) && Gdx.input.isKeyPressed(Input.Keys.CONTROL_LEFT)
+        ) {
+            camera.x += cameraSpeed * 2f
+        }
+
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.W) && Gdx.input.isKeyPressed(Input.Keys.CONTROL_LEFT)
+        ) {
+            camera.y -= cameraSpeed * 2f
+        }
+
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.S) && Gdx.input.isKeyPressed(Input.Keys.CONTROL_LEFT)
+        ) {
+            camera.y += cameraSpeed * 2f
         }
 
         // =================================================
@@ -266,16 +300,12 @@ val mouseY =
                 selectedObject!!
 
             selected.x =
-                snap(
                     worldX -
                     dragOffsetX
-                )
 
             selected.y =
-                snap(
                     worldY -
                     dragOffsetY
-                )
         }
 
         // =================================================

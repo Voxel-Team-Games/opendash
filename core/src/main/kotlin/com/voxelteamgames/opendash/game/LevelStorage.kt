@@ -44,9 +44,6 @@ object LevelStorage {
             level,
             file.path
         )
-
-        println("Fase salva em:")
-        println(file.absolutePath)
     }
 
     fun exists(

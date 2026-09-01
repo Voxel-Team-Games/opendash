@@ -68,6 +68,26 @@ object DefaultObjects {
             )
         )
 
+        ObjectRegistry.register(
+            ObjectDefinition(
+                id = "deco.jump_marker",
+                type = ObjectType.TOUCH_TRIGGER,
+                texture =
+                    "/textures/deco/jump_marker.png",
+                collision = true
+            )
+        )
+
+        ObjectRegistry.register(
+            ObjectDefinition(
+                id = "deco.jump_marker_2",
+                type = ObjectType.TOUCH_TRIGGER,
+                texture =
+                    "/textures/deco/jump_marker_2.png",
+                collision = true
+            )
+        )
+
 // =================================================
 // TOUCH TRIGGERS
 // =================================================

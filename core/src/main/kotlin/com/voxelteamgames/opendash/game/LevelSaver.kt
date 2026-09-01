@@ -32,6 +32,8 @@ object LevelSaver {
 
         val data =
             LevelData(
+                music = level.music,
+                speed = level.speed,
                 objects = objects
             )
 
@@ -47,6 +49,10 @@ object LevelSaver {
 
     @Serializable
     private data class LevelData(
+
+        val music: String? = null,
+
+        val speed: Float? = null,
 
         val objects: List<LevelObjectData>
 
