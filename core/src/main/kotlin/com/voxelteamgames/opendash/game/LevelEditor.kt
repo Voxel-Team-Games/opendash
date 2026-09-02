@@ -14,6 +14,7 @@ class LevelEditor(
 ) {
 
     var number = 1
+    private var mouseScroll = 0
 
     var selectedObject: LevelObject? = null
         private set
@@ -103,12 +104,36 @@ class LevelEditor(
         if (
             Gdx.input.isKeyPressed(Input.Keys.NUM_9)
         ) {
-            selectedObjectId = "deco.jump_marker"
+            selectedObjectId = "deco.jump_marker_2"
         }
         if (
             Gdx.input.isKeyPressed(Input.Keys.NUM_0)
         ) {
-            selectedObjectId = "deco.jump_marker_2"
+            selectedObjectId = "deco.back_iron_block"
+        }
+
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.MINUS)
+        ) {
+            selectedObjectId = "deco.back_yellow_spike"
+        }
+
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUMPAD_1)
+        ) {
+            selectedObjectId = "deco.white_square"
+        }
+
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUMPAD_2)
+        ) {
+            selectedObjectId = "deco.gray_square"
+        }
+
+        if (
+            Gdx.input.isKeyPressed(Input.Keys.NUMPAD_3)
+        ) {
+            selectedObjectId = "deco.black_square"
         }
 
         // =================================================
@@ -300,6 +325,29 @@ val mouseY =
                 selectedObject!!
 
             selected.x =
+                snap(
+                    worldX -
+                    dragOffsetX
+                )
+
+            selected.y =
+                snap(
+                    worldY -
+                    dragOffsetY
+                )
+        }
+
+        if (
+            leftPressed &&
+            dragging &&
+            Gdx.input.isKeyPressed(Input.Keys.CONTROL_LEFT) &&
+            selectedObject != null
+        ) {
+
+            val selected =
+                selectedObject!!
+
+            selected.x =
                     worldX -
                     dragOffsetX
 
@@ -321,6 +369,81 @@ val mouseY =
 
         leftMouseWasPressed =
             leftPressed
+
+// =================================================
+// RODINHA DO MOUSE
+// =================================================
+
+val scroll =
+    mouseScroll
+
+mouseScroll = 0
+
+if (
+    scroll != 0 &&
+    selectedObject != null
+) {
+
+    val selected =
+        selectedObject!!
+
+    // LEFT SHIFT = ROTAÇÃO
+    if (
+        Gdx.input.isKeyPressed(
+            Input.Keys.SHIFT_LEFT
+        )
+    ) {
+
+        if (Gdx.input.isKeyPressed(Input.Keys.CONTROL_LEFT)) {
+        selected.rotation +=
+            if (scroll < 0) 45f else -45f
+        }
+        else {
+        selected.rotation +=
+            if (scroll < 0) 1f else -1f
+        }
+
+        // Mantém entre 0 e 359 graus
+        if (selected.rotation >= 360f) {
+            selected.rotation -= 360f
+        }
+
+        if (selected.rotation < 0f) {
+            selected.rotation += 360f
+        }
+        println("Rotação: ${selected.rotation}")
+    }
+
+    // RIGHT CTRL = ESCALA HORIZONTAL
+    else if (
+        Gdx.input.isKeyPressed(
+            Input.Keys.CONTROL_RIGHT
+        )
+    ) {
+
+        selected.scaleX +=
+            if (scroll < 0) 0.1f else -0.1f
+
+        // Impede escala zero/negativa
+        selected.scaleX =
+            selected.scaleX.coerceAtLeast(0.1f)
+    }
+
+    // RIGHT SHIFT = ESCALA VERTICAL
+    else if (
+        Gdx.input.isKeyPressed(
+            Input.Keys.SHIFT_RIGHT
+        )
+    ) {
+
+        selected.scaleY +=
+            if (scroll < 0) 0.1f else -0.1f
+
+        // Impede escala zero/negativa
+        selected.scaleY =
+            selected.scaleY.coerceAtLeast(0.1f)
+    }
+}
 
         // =================================================
         // BOTÃO DIREITO
@@ -478,7 +601,8 @@ val mouseY =
                             GRID_SIZE *
                                 levelObject.scaleX,
                             GRID_SIZE *
-                                levelObject.scaleY
+                                levelObject.scaleY,
+                            rotation = levelObject.rotation
                         )
 
                     } else if (
@@ -566,7 +690,8 @@ val mouseY =
                             GRID_SIZE *
                                 levelObject.scaleX,
                             GRID_SIZE *
-                                levelObject.scaleY
+                                levelObject.scaleY,
+                            rotation = levelObject.rotation
                         )
 
                     } else if (
@@ -676,4 +801,7 @@ val mouseY =
             y += GRID_SIZE
         }
     }
+fun onMouseScrolled(amount: Int) {
+    mouseScroll = amount
+}
 }

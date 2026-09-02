@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.graphics.GL20
+import com.badlogic.gdx.InputAdapter
 
 import com.voxelteamgames.opendash.engine.graphics.Camera
 import com.voxelteamgames.opendash.engine.graphics.SpriteRenderer
@@ -91,6 +92,24 @@ private val AUTO_SAVE_INTERVAL = 10f
     private var saveAsWasPressed = false
     private var loadWasPressed = false
 
+private val inputProcessor =
+    object : InputAdapter() {
+
+        override fun scrolled(
+            amountX: Float,
+            amountY: Float
+        ): Boolean {
+
+            if (::editor.isInitialized) {
+                editor.onMouseScrolled(
+                    amountY.toInt()
+                )
+            }
+
+            return false
+        }
+    }
+
     // =================================================
     // CREATE
     // =================================================
@@ -169,10 +188,25 @@ private val AUTO_SAVE_INTERVAL = 10f
             "/textures/trigger/reverse_trigger.png"
         )
         loadTexture(
+            "/textures/deco/raster_yellow_spike_back.png"
+        )
+        loadTexture(
+            "/textures/deco/raster_iron_block_back.png"
+        )
+        loadTexture(
             "/textures/deco/jump_marker.png"
         )
         loadTexture(
             "/textures/deco/jump_marker_2.png"
+        )
+        loadTexture(
+            "/textures/deco/white_square.png"
+        )
+        loadTexture(
+            "/textures/deco/gray_square.png"
+        )
+        loadTexture(
+            "/textures/deco/black_square.png"
         )
 
 
@@ -286,6 +320,9 @@ private val AUTO_SAVE_INTERVAL = 10f
             LevelEditor(
                 level
             )
+        
+        Gdx.input.inputProcessor =
+            inputProcessor
 
         camera.follow(
             game.playerX,

@@ -288,6 +288,13 @@ if (
         // POSIÇÃO ANTERIOR
         // =================================================
 
+val previousTop =
+    player.y
+
+val previousCenterX =
+    player.x +
+    player.width / 2f
+
         val previousBottom =
             player.y +
             player.height
@@ -353,22 +360,6 @@ if (
                     levelObject.id
                 )
 
-            val objectLeft =
-                levelObject.x
-
-            val objectRight =
-                levelObject.x +
-                64f *
-                levelObject.scaleX
-
-            val objectTop =
-                levelObject.y
-
-            val objectBottom =
-                levelObject.y +
-                64f *
-                levelObject.scaleY
-
             // =================================================
             // TOUCH TRIGGER
             // =================================================
@@ -378,18 +369,11 @@ if (
                 ObjectType.TOUCH_TRIGGER
             ) {
 
-                val horizontalCollision =
-                    currentRight > objectLeft &&
-                    currentLeft < objectRight
-
-                val verticalCollision =
-                    currentBottom > objectTop &&
-                    currentTop < objectBottom
-
-                if (
-                    horizontalCollision &&
-                    verticalCollision
-                ) {
+if (
+    isPlayerCollidingWithObject(
+        levelObject
+    )
+) {
 
                     when (
                         levelObject.id
@@ -480,37 +464,26 @@ if (
                 continue
             }
 
-            // =================================================
-            // HAZARD
-            // =================================================
+// =================================================
+// HAZARD
+// =================================================
 
-            if (
-                definition.type ==
-                ObjectType.HAZARD
-            ) {
+if (
+    definition.type ==
+    ObjectType.HAZARD
+) {
 
-                val horizontalCollision =
-                    currentRight >
-                    objectLeft + 21f &&
-                    currentLeft <
-                    objectRight - 21f
+    if (
+        isPlayerCollidingWithObject(
+            levelObject
+        )
+    ) {
 
-                val verticalCollision =
-                    currentBottom >
-                    objectTop + 21f &&
-                    currentTop <
-                    objectBottom
+        killPlayer()
 
-                if (
-                    horizontalCollision &&
-                    verticalCollision
-                ) {
-
-                    killPlayer()
-
-                    return
-                }
-            }
+        return
+    }
+}
 
 // =================================================
 // BLOCK
@@ -521,22 +494,12 @@ if (
     ObjectType.BLOCK
 ) {
 
-    val horizontalCollision =
-        currentRight >
-        objectLeft &&
-        currentLeft <
-        objectRight
+    val colliding =
+        isPlayerCollidingWithObject(
+            levelObject
+        )
 
-    val verticalCollision =
-        currentBottom >
-        objectTop &&
-        currentTop <
-        objectBottom
-
-    if (
-        !horizontalCollision ||
-        !verticalCollision
-    ) {
+    if (!colliding) {
         continue
     }
 
@@ -544,69 +507,33 @@ if (
     // GRAVIDADE NORMAL
     // =================================================
 
-    if (!player.gravityInverted) {
+    if (
+        !player.gravityInverted
+    ) {
 
-        val topDistance =
-            currentBottom -
-            objectTop
-
-        val landedOnTop =
+        /*
+         * O player está caindo e atingiu
+         * a parte superior do bloco.
+         */
+        if (
+            player.velocityY >= 0f &&
             previousBottom <=
-            objectTop &&
-            currentBottom >=
-            objectTop &&
-            player.velocityY >= 0f
-
-        val nearTop =
-            topDistance >=
-            -TOP_TOLERANCE &&
-            topDistance <=
+            levelObject.y +
+            64f *
+            levelObject.scaleY +
             TOP_TOLERANCE
-
-        if (
-            player.velocityY >= 0f &&
-            (
-                landedOnTop ||
-                nearTop
-            )
         ) {
 
             player.landOn(
-                objectTop
+                levelObject.y
             )
 
             continue
         }
 
         // ---------------------------------------------
-        // COLISÃO LETAL
+        // COLISÃO LATERAL / INFERIOR
         // ---------------------------------------------
-
-        val deeplyInsideBlock =
-            topDistance >
-            WALL_LETHALITY_MARGIN
-
-        if (
-            deeplyInsideBlock
-        ) {
-
-            killPlayer()
-
-            return
-        }
-
-        if (
-            player.velocityY >= 0f &&
-            topDistance <=
-            WALL_LETHALITY_MARGIN
-        ) {
-
-            player.landOn(
-                objectTop
-            )
-
-            continue
-        }
 
         killPlayer()
 
@@ -619,67 +546,32 @@ if (
 
     else {
 
-        val bottomDistance =
-            objectBottom -
-            currentTop
+        val blockBottom =
+            levelObject.y +
+            64f *
+            levelObject.scaleY
 
-        val landedOnBottom =
-            previousBottom >=
-            objectBottom &&
-            currentTop <=
-            objectBottom &&
-            player.velocityY <= 0f
-
-        val nearBottom =
-            bottomDistance >=
-            -TOP_TOLERANCE &&
-            bottomDistance <=
+        /*
+         * O player está subindo e atingiu
+         * a parte inferior do bloco.
+         */
+        if (
+            player.velocityY <= 0f &&
+            previousTop >=
+            blockBottom -
             TOP_TOLERANCE
-
-        if (
-            player.velocityY <= 0f &&
-            (
-                landedOnBottom ||
-                nearBottom
-            )
         ) {
 
             player.landOn(
-                objectBottom
+                blockBottom
             )
 
             continue
         }
 
         // ---------------------------------------------
-        // COLISÃO LETAL
+        // COLISÃO LATERAL / SUPERIOR
         // ---------------------------------------------
-
-        val deeplyInsideBlock =
-            bottomDistance >
-            WALL_LETHALITY_MARGIN
-
-        if (
-            deeplyInsideBlock
-        ) {
-
-            killPlayer()
-
-            return
-        }
-
-        if (
-            player.velocityY <= 0f &&
-            bottomDistance <=
-            WALL_LETHALITY_MARGIN
-        ) {
-
-            player.landOn(
-                objectBottom
-            )
-
-            continue
-        }
 
         killPlayer()
 
@@ -702,6 +594,303 @@ if (
             return
         }
     }
+private fun isPlayerCollidingWithObject(
+    levelObject: LevelObject
+): Boolean {
+
+    val definition =
+        ObjectRegistry.get(
+            levelObject.id
+        )
+
+    // =================================================
+    // BLOCK — HITBOX NÃO ROTACIONADA
+    // =================================================
+
+    if (
+        definition.type ==
+        ObjectType.BLOCK
+    ) {
+
+        val objectLeft =
+            levelObject.x
+
+        val objectRight =
+            levelObject.x +
+            64f *
+            levelObject.scaleX
+
+        val objectTop =
+            levelObject.y
+
+        val objectBottom =
+            levelObject.y +
+            64f *
+            levelObject.scaleY
+
+        val playerLeft =
+            player.x
+
+        val playerRight =
+            player.x +
+            player.width
+
+        val playerTop =
+            player.y
+
+        val playerBottom =
+            player.y +
+            player.height
+
+        return (
+            playerRight > objectLeft &&
+            playerLeft < objectRight &&
+            playerBottom > objectTop &&
+            playerTop < objectBottom
+        )
+    }
+
+    // =================================================
+    // OUTROS OBJETOS — SAT ROTACIONADO
+    // =================================================
+
+    val objectWidth =
+        if (
+            definition.type ==
+            ObjectType.HAZARD
+        ) {
+            32f *
+                levelObject.scaleX
+        } else {
+            64f *
+                levelObject.scaleX
+        }
+
+    val objectHeight =
+        if (
+            definition.type ==
+            ObjectType.HAZARD
+        ) {
+            40f *
+                levelObject.scaleY
+        } else {
+            64f *
+                levelObject.scaleY
+        }
+
+    val objectCenterX =
+        levelObject.x +
+        32f *
+        levelObject.scaleX
+
+    val objectCenterY =
+        levelObject.y +
+        32f *
+        levelObject.scaleY
+
+    val playerCenterX =
+        player.x +
+        player.width / 2f
+
+    val playerCenterY =
+        player.y +
+        player.height / 2f
+
+    val angle =
+        Math.toRadians(
+            levelObject.rotation.toDouble()
+        )
+
+    val cos =
+        kotlin.math.cos(
+            angle
+        ).toFloat()
+
+    val sin =
+        kotlin.math.sin(
+            angle
+        ).toFloat()
+
+    val axes =
+        arrayOf(
+            floatArrayOf(1f, 0f),
+            floatArrayOf(0f, 1f),
+            floatArrayOf(cos, sin),
+            floatArrayOf(-sin, cos)
+        )
+
+    val dx =
+        playerCenterX -
+        objectCenterX
+
+    val dy =
+        playerCenterY -
+        objectCenterY
+
+    for (
+        axis in axes
+    ) {
+
+        val axisX =
+            axis[0]
+
+        val axisY =
+            axis[1]
+
+        val playerRadius =
+            player.width / 2f *
+            kotlin.math.abs(axisX) +
+            player.height / 2f *
+            kotlin.math.abs(axisY)
+
+        val objectRadius =
+            objectWidth / 2f *
+            kotlin.math.abs(
+                axisX * cos +
+                axisY * sin
+            ) +
+            objectHeight / 2f *
+            kotlin.math.abs(
+                axisX * -sin +
+                axisY * cos
+            )
+
+        val distance =
+            kotlin.math.abs(
+                dx * axisX +
+                dy * axisY
+            )
+
+        if (
+            distance >
+            playerRadius +
+            objectRadius
+        ) {
+            return false
+        }
+    }
+
+    return true
+}
+
+private fun getBlockSurfaceY(
+    levelObject: LevelObject,
+    playerX: Float,
+    inverted: Boolean
+): Float? {
+
+    val width =
+        64f * levelObject.scaleX
+
+    val height =
+        64f * levelObject.scaleY
+
+    val centerX =
+        levelObject.x +
+        width / 2f
+
+    val centerY =
+        levelObject.y +
+        height / 2f
+
+    val angle =
+        Math.toRadians(
+            levelObject.rotation.toDouble()
+        )
+
+    val cos =
+        kotlin.math.cos(angle).toFloat()
+
+    val sin =
+        kotlin.math.sin(angle).toFloat()
+
+    val halfWidth =
+        width / 2f
+
+    val halfHeight =
+        height / 2f
+
+    /*
+     * Face do bloco que o jogador deve tocar.
+     *
+     * Y-down:
+     *
+     * gravidade normal    -> face superior
+     * gravidade invertida -> face inferior
+     */
+    val localY =
+        if (inverted) {
+            halfHeight
+        } else {
+            -halfHeight
+        }
+
+    val leftX =
+        -halfWidth
+
+    val rightX =
+        halfWidth
+
+    /*
+     * Rotação no sistema Y-down.
+     */
+    val leftWorldX =
+        centerX +
+        leftX * cos +
+        localY * sin
+
+    val leftWorldY =
+        centerY -
+        leftX * sin +
+        localY * cos
+
+    val rightWorldX =
+        centerX +
+        rightX * cos +
+        localY * sin
+
+    val rightWorldY =
+        centerY -
+        rightX * sin +
+        localY * cos
+
+    val dx =
+        rightWorldX -
+        leftWorldX
+
+    /*
+     * Se a superfície estiver vertical,
+     * não existe uma altura única para X.
+     */
+    if (
+        kotlin.math.abs(dx) <
+        0.001f
+    ) {
+        return null
+    }
+
+    val t =
+        (
+            playerX -
+            leftWorldX
+        ) / dx
+
+    /*
+     * O jogador precisa estar sobre a face.
+     */
+    if (
+        t < 0f ||
+        t > 1f
+    ) {
+        return null
+    }
+
+    return leftWorldY +
+        (
+            rightWorldY -
+            leftWorldY
+        ) * t
+}
 
     // =================================================
     // YELLOW ORB COLLISION
@@ -751,18 +940,11 @@ if (
                 64f *
                 levelObject.scaleY
 
-            val horizontalCollision =
-                currentRight > objectLeft &&
-                currentLeft < objectRight
-
-            val verticalCollision =
-                currentBottom > objectTop &&
-                currentTop < objectBottom
-
-            if (
-                horizontalCollision &&
-                verticalCollision
-            ) {
+if (
+    isPlayerCollidingWithObject(
+        levelObject
+    )
+) {
 
                 return true
             }
@@ -864,7 +1046,8 @@ if (
                             64f *
                                 levelObject.scaleX,
                             64f *
-                                levelObject.scaleY
+                                levelObject.scaleY,
+                            rotation = levelObject.rotation
                         )
 
                     } else if (
@@ -926,7 +1109,8 @@ if (
                             64f *
                                 levelObject.scaleX,
                             64f *
-                                levelObject.scaleY
+                                levelObject.scaleY,
+                            rotation = levelObject.rotation
                         )
 
                     } else if (
@@ -1026,7 +1210,8 @@ if (
                             64f *
                                 levelObject.scaleX,
                             64f *
-                                levelObject.scaleY
+                                levelObject.scaleY,
+                            rotation = levelObject.rotation
                         )
 
                     } else if (
@@ -1082,7 +1267,6 @@ if (
             player.height
         )
     }
-
     fun clearNextLevelRequest() {
         nextLevelRequested = false
     }
@@ -1138,18 +1322,11 @@ private fun isTouchingReverseTrigger(): Boolean {
             64f *
             levelObject.scaleY
 
-        val horizontalCollision =
-            currentRight > objectLeft &&
-            currentLeft < objectRight
-
-        val verticalCollision =
-            currentBottom > objectTop &&
-            currentTop < objectBottom
-
-        if (
-            horizontalCollision &&
-            verticalCollision
-        ) {
+if (
+    isPlayerCollidingWithObject(
+        levelObject
+    )
+) {
             return true
         }
     }
@@ -1201,18 +1378,11 @@ private fun isTouchingInvertTrigger(): Boolean {
             64f *
             levelObject.scaleY
 
-        val horizontalCollision =
-            currentRight > objectLeft &&
-            currentLeft < objectRight
-
-        val verticalCollision =
-            currentBottom > objectTop &&
-            currentTop < objectBottom
-
-        if (
-            horizontalCollision &&
-            verticalCollision
-        ) {
+if (
+    isPlayerCollidingWithObject(
+        levelObject
+    )
+) {
             return true
         }
     }

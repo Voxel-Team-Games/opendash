@@ -70,6 +70,15 @@ object DefaultObjects {
 
         ObjectRegistry.register(
             ObjectDefinition(
+                id = "deco.jump_marker_2",
+                type = ObjectType.TOUCH_TRIGGER,
+                texture =
+                    "/textures/deco/jump_marker_2.png",
+                collision = true
+            )
+        )
+        ObjectRegistry.register(
+            ObjectDefinition(
                 id = "deco.jump_marker",
                 type = ObjectType.TOUCH_TRIGGER,
                 texture =
@@ -80,10 +89,46 @@ object DefaultObjects {
 
         ObjectRegistry.register(
             ObjectDefinition(
-                id = "deco.jump_marker_2",
+                id = "deco.back_iron_block",
                 type = ObjectType.TOUCH_TRIGGER,
                 texture =
-                    "/textures/deco/jump_marker_2.png",
+                    "/textures/deco/raster_iron_block_back.png",
+                collision = true
+            )
+        )
+        ObjectRegistry.register(
+            ObjectDefinition(
+                id = "deco.back_yellow_spike",
+                type = ObjectType.TOUCH_TRIGGER,
+                texture =
+                    "/textures/deco/raster_yellow_spike_back.png",
+                collision = true
+            )
+        )
+        ObjectRegistry.register(
+            ObjectDefinition(
+                id = "deco.white_square",
+                type = ObjectType.TOUCH_TRIGGER,
+                texture =
+                    "/textures/deco/white_square.png",
+                collision = true
+            )
+        )
+        ObjectRegistry.register(
+            ObjectDefinition(
+                id = "deco.gray_square",
+                type = ObjectType.TOUCH_TRIGGER,
+                texture =
+                    "/textures/deco/gray_square.png",
+                collision = true
+            )
+        )
+        ObjectRegistry.register(
+            ObjectDefinition(
+                id = "deco.black_square",
+                type = ObjectType.TOUCH_TRIGGER,
+                texture =
+                    "/textures/deco/black_square.png",
                 collision = true
             )
         )

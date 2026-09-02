@@ -31,7 +31,8 @@ class SpriteRenderer {
         x: Float,
         y: Float,
         width: Float,
-        height: Float
+        height: Float,
+        rotation: Float = 0f
     ) {
 
         val camera =
@@ -54,20 +55,6 @@ class SpriteRenderer {
             drawHeight =
                 height * camera.zoom
 
-            /*
-             * O OpenDash usa Y-down:
-             *
-             *      0 ───────── topo
-             *      ↓
-             *      ↓
-             *    640 ─────── chão
-             *
-             * O SpriteBatch usa Y-up.
-             *
-             * Portanto convertemos a coordenada Y
-             * para o sistema do LibGDX.
-             */
-
             val worldScreenY =
                 (y - camera.y) * camera.zoom +
                 screenHeight / 2f
@@ -88,11 +75,6 @@ class SpriteRenderer {
             drawHeight =
                 height
 
-            /*
-             * Mesmo sem câmera, o mundo do OpenDash
-             * continua usando Y-down.
-             */
-
             screenY =
                 screenHeight -
                 y -
@@ -103,8 +85,19 @@ class SpriteRenderer {
             texture.gdxTexture,
             screenX,
             screenY,
+            drawWidth / 2f,
+            drawHeight / 2f,
             drawWidth,
-            drawHeight
+            drawHeight,
+            1f,
+            1f,
+            rotation,
+            0,
+            0,
+            texture.gdxTexture.width,
+            texture.gdxTexture.height,
+            false,
+            false
         )
     }
 
