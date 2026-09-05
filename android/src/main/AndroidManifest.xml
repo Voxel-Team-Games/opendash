@@ -7,7 +7,7 @@
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
-        android:label="OpenDash"
+        android:label="MorphJump"
         android:allowBackup="false"
         android:supportsRtl="true">
 

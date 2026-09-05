@@ -63,7 +63,7 @@ java {
 
 application {
     mainClass.set(
-        "com.voxelteamgames.opendash.DesktopLauncherKt"
+        "com.voxelteamgames.morphjump.DesktopLauncherKt"
     )
 }
 
@@ -75,7 +75,7 @@ tasks.jar {
     manifest {
         attributes(
             "Main-Class" to
-                "com.voxelteamgames.opendash.DesktopLauncherKt"
+                "com.voxelteamgames.morphjump.DesktopLauncherKt"
         )
     }
 }
@@ -87,7 +87,7 @@ tasks.jar {
 val fatJar =
     tasks.register<Jar>("fatJar") {
 
-        archiveBaseName.set("OpenDash")
+        archiveBaseName.set("morphjump")
         archiveVersion.set("0.1")
         archiveClassifier.set("")
 
@@ -97,7 +97,7 @@ val fatJar =
         manifest {
             attributes(
                 "Main-Class" to
-                    "com.voxelteamgames.opendash.DesktopLauncherKt"
+                    "com.voxelteamgames.morphjump.DesktopLauncherKt"
             )
         }
 

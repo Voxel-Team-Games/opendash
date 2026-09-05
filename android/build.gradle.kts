@@ -15,11 +15,11 @@ configurations {
 }
 
 android {
-    namespace = "com.voxelteamgames.opendash"
+    namespace = "com.voxelteamgames.morphjump"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.voxelteamgames.opendash"
+        applicationId = "com.voxelteamgames.morphjump"
         minSdk = 23
         targetSdk = 35
 

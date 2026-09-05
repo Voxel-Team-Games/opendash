@@ -1,0 +1,57 @@
+{
+    "music": "music/race_around_the_world.mp3",
+    "speed": 350.0,
+    "objects": [
+        {
+            "id": "deco.black_square",
+            "x": 523.0,
+            "y": 486.00003,
+            "scaleX": 0.4999999,
+            "scaleY": 0.6999999,
+            "rotation": 315.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 544.0,
+            "y": 482.0,
+            "scaleX": 2.0000002,
+            "scaleY": 0.4999999
+        },
+        {
+            "id": "deco.black_square",
+            "x": 628.0,
+            "y": 591.0,
+            "scaleX": 0.4999999,
+            "scaleY": 0.6999999,
+            "rotation": 315.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 640.0,
+            "y": 512.0,
+            "scaleX": 0.4999999,
+            "scaleY": 1.5000001
+        },
+        {
+            "id": "block.iron",
+            "x": 512.0,
+            "y": 512.0,
+            "scaleX": 2.0000002,
+            "scaleY": 2.0000002
+        },
+        {
+            "id": "deco.white_square",
+            "x": 512.0,
+            "y": 512.0,
+            "scaleX": 2.0000002,
+            "scaleY": 2.0000002
+        },
+        {
+            "id": "hazard.yellow_spike",
+            "x": 506.0,
+            "y": 512.0,
+            "scaleX": 0.1,
+            "scaleY": 2.0000002
+        }
+    ]
+}

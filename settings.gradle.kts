@@ -17,7 +17,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "opendash"
+rootProject.name = "morphjump"
 
 include(":core")
 include(":desktop")

@@ -1,0 +1,2152 @@
+{
+    "music": "music/race_around_the_world.mp3",
+    "speed": 350.0,
+    "objects": [
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": 0.0
+        },
+        {
+            "id": "block.iron",
+            "x": 0.0,
+            "y": -64.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": -64.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 0.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 64.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 128.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 192.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 256.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 320.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 448.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 384.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 512.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 64.0,
+            "y": 576.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 256.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 320.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 384.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 256.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 448.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 448.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 448.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 256.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 256.0,
+            "y": 128.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 320.0,
+            "y": 128.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 384.0,
+            "y": 128.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 448.0,
+            "y": 128.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 320.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 384.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 448.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 576.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 576.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 576.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 576.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 576.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 640.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 704.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 768.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 768.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 768.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 768.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 768.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 704.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 640.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 896.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 896.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 896.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 896.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 896.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 960.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1024.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1088.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 960.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1024.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1216.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1280.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1344.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1408.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1280.0,
+            "y": 128.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1280.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1280.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1280.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1344.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1408.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1280.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1408.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1536.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1536.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1536.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1536.0,
+            "y": 576.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1536.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1536.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1536.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1600.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1664.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1600.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1664.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1728.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1728.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1728.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1728.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1728.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1856.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1920.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1984.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2048.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2048.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2048.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2048.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2048.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1984.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1920.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1856.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1856.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1856.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1920.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 1984.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2176.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2176.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2176.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2176.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2176.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2240.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2270.0,
+            "y": 385.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2271.0,
+            "y": 321.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2304.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2368.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2496.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2560.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2624.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2688.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2496.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2496.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2560.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2624.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2688.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2688.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2688.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2624.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2496.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2560.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2816.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2880.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2944.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3008.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2816.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2816.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2880.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2944.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3008.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3008.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3008.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2944.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2880.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2816.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3136.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3136.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3136.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3264.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3264.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3264.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3264.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3264.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3328.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3392.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3456.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3328.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3392.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3456.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3456.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3456.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3392.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3328.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3136.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3136.0,
+            "y": 128.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3712.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3776.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3840.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3968.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3968.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3776.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3648.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3648.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3648.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3712.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3712.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3776.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3776.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3670.0,
+            "y": 200.0,
+            "scaleY": 1.5000001,
+            "rotation": 315.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3712.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3712.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3776.0,
+            "y": 424.0,
+            "scaleX": 4.2999983,
+            "rotation": 45.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3840.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3840.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3904.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3968.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3904.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 3848.0,
+            "y": 216.0,
+            "scaleX": 1.5000001,
+            "rotation": 45.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3904.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3904.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3776.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3840.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3776.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 320.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 384.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 448.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 256.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 384.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 320.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 256.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 320.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 384.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 448.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 576.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 640.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 704.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 768.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 640.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 704.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 896.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 960.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1024.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 960.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1024.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1088.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1216.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1280.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1408.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1344.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1344.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1408.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1600.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1664.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1728.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1600.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1664.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1856.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1920.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1984.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1920.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1984.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1856.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1920.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 1984.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2048.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2176.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2304.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2240.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2368.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2496.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2560.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2624.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2688.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2496.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2560.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2624.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2560.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2624.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2688.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2880.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2944.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3008.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2816.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2880.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2944.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2816.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2880.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 2944.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3008.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3136.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3136.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3264.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3328.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3392.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3456.0,
+            "y": 512.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3456.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3392.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3328.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3328.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 3392.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2368.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2368.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2368.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.black_square",
+            "x": 2368.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4352.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4352.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4352.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4352.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4352.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4416.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4480.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4480.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4480.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4544.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4608.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4608.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4608.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4608.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4608.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4736.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4736.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4736.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4736.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4736.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4800.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4864.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4928.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4928.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4928.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4928.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4928.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4800.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 4864.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5056.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5120.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5184.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5248.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5312.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5184.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5184.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5184.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5184.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5440.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5440.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5440.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5440.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5440.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5504.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5568.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5632.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5504.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5568.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5504.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5568.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5632.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5760.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5760.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5760.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5760.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5760.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5824.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5888.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5952.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6016.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6016.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6016.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5952.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5888.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5824.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 5952.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6016.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6144.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6144.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6144.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6144.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6144.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6208.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6272.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6336.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6400.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6208.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6272.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6528.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6528.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6528.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6528.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6528.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6592.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6656.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6720.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6720.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6848.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6848.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6848.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6848.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6848.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6976.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6912.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7040.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7104.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7104.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7104.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7104.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7104.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6912.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 6976.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7040.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7232.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7232.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7232.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7232.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7232.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7296.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7360.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7424.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7488.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7488.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7488.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7488.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7488.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7360.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7360.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7616.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7616.0,
+            "y": 256.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7616.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7616.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7616.0,
+            "y": 384.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7680.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7744.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7808.0,
+            "y": 448.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7680.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7744.0,
+            "y": 320.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7680.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7744.0,
+            "y": 192.0
+        },
+        {
+            "id": "deco.white_square",
+            "x": 7808.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 576.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 512.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 448.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 384.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 256.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 320.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 192.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 0.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": 64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": -128.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": -64.0
+        },
+        {
+            "id": "block.iron",
+            "x": 8640.0,
+            "y": -192.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 576.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 512.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 448.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 384.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 320.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 256.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 192.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 128.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 0.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": -64.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": -128.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": -192.0
+        },
+        {
+            "id": "trigger.reverse",
+            "x": 8576.0,
+            "y": 64.0
+        }
+    ]
+}
